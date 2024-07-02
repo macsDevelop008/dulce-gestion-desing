@@ -1,3 +1,4 @@
+import 'package:dulce_gestion/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 
 class InitialScreen extends StatelessWidget {
@@ -13,7 +14,10 @@ class InitialScreen extends StatelessWidget {
           onPopInvoked: (pop) {
             debugPrint('event');
           },
-          child: Text('Initial Screen')),
+          child: BackgroundCurveDecoration(
+            color: Colors.pink,
+            scale: .1,
+          )),
     );
   }
 }

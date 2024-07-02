@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'presentation/main_app.dart';
 
-void main() => runApp(const MainApp());
+Future main() async {
+  await dotenv.load(fileName: ".env");
+  return runApp(const MainApp());
+}

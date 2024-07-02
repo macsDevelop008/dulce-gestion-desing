@@ -1,16 +1,9 @@
 # dulce_gestion
 
-A new Flutter project.
+Dulce Gestion is a comprehensive solution designed to facilitate the management of supplies, products, suppliers, invoices and orders in baking companies. This system helps optimize daily operations, improve efficiency in inventory management and ensure precise control of administrative and logistical processes.
 
-## Getting Started
+## 🛠 Technologies
 
-This project is a starting point for a Flutter application.
+**Flutter:** 3.22.2
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Dart:** 3.4.3
