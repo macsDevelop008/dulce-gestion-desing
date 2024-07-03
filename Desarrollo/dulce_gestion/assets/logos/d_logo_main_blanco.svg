@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 793.70081 1122.5197"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="d_logo_main_blanco.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.36569515"
+     inkscape:cx="-240.63759"
+     inkscape:cy="564.67799"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11">
+      <path
+         id="path11"
+         style="display:none;opacity:0.72;fill:#000000;stroke-width:1.50601"
+         d="m 161.85156,122.86719 a 23.294125,24.802813 0 0 0 -23.29297,24.80273 23.294125,24.802813 0 0 0 23.29297,24.80274 23.294125,24.802813 0 0 0 14.68555,-5.60547 l 9.47656,2.53906 -4.69922,-8.13867 a 23.294125,24.802813 0 0 0 3.83203,-13.59766 23.294125,24.802813 0 0 0 -23.29492,-24.80273 z"
+         sodipodi:insensitive="true" />
+      <path
+         id="lpe_path-effect11"
+         style="opacity:0.72;fill:#000000;stroke-width:1.50601"
+         class="powerclip"
+         d="m 113.28125,53.779297 h 97.41602 V 196.06055 h -97.41602 z m 48.57031,69.087893 a 23.294125,24.802813 0 0 0 -23.29297,24.80273 23.294125,24.802813 0 0 0 23.29297,24.80274 23.294125,24.802813 0 0 0 14.68555,-5.60547 l 9.47656,2.53906 -4.69922,-8.13867 a 23.294125,24.802813 0 0 0 3.83203,-13.59766 23.294125,24.802813 0 0 0 -23.29492,-24.80273 z" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect11"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path8"
+       style="opacity:1;fill:#00ffff;stroke-width:1.19039"
+       d="m 182.25,58.779297 v 50.974613 a 41.398365,44.234695 0 0 0 -22.57031,-7.16407 41.398365,44.234695 0 0 0 -41.39844,44.23633 41.398365,44.234695 0 0 0 41.39844,44.23438 41.398365,44.234695 0 0 0 22.58008,-7.1836 l 23.4375,6.2793 V 59.019531 Z"
+       clip-path="url(#clipPath11)"
+       inkscape:path-effect="#path-effect11"
+       inkscape:original-d="m 182.25,58.779297 v 50.974613 a 41.398365,44.234695 0 0 0 -22.57031,-7.16407 41.398365,44.234695 0 0 0 -41.39844,44.23633 41.398365,44.234695 0 0 0 41.39844,44.23438 41.398365,44.234695 0 0 0 22.58008,-7.1836 l 23.4375,6.2793 V 59.019531 Z"
+       transform="matrix(8.2765443,0,0,8.2765443,-950.56032,-466.05274)"
+       inkscape:label="d_desing" />
+    <path
+       style="fill:#ff0000;stroke-width:1.0967"
+       d="m 494.44366,912.32608 46.98052,-58.82379 49.52505,85.22368 z"
+       id="path1"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="triangle_desing" />
+  </g>
+</svg>

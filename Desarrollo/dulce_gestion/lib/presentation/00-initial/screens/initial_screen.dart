@@ -8,15 +8,24 @@ class InitialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //final size = MediaQuery.of(context).size;
+
     return Scaffold(
       body: PopScope(
           canPop: false,
           onPopInvoked: (pop) {
-            debugPrint('event');
+            debugPrint('Sin Botón Atras');
           },
-          child: BackgroundCurveDecoration(
-            color: Colors.pink,
-            scale: .1,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //! Logo
+                InitialLogoView(),
+                //! Puntos animados de carga
+                //! Version de la app
+              ],
+            ),
           )),
     );
   }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BackgroundCurveDecoration extends StatelessWidget {
+class GlobalBackgroundCurveDecoration extends StatelessWidget {
   final Color color;
   final double scale;
 
-  const BackgroundCurveDecoration(
+  const GlobalBackgroundCurveDecoration(
       {super.key, required this.color, required this.scale});
 
   @override
