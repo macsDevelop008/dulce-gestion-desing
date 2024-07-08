@@ -1,3 +1,4 @@
+import 'package:dulce_gestion/configuration/configuration.dart';
 import 'package:dulce_gestion/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 
@@ -6,11 +7,11 @@ class InitialLogoView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    double widthBase = size.width * 0.7;
-    double heightBase = size.height * 0.38;
+    double widthBase = Responsive.widthSize(context, 0.66, 0.6);
+    double heightBase = Responsive.heightSize(context, 0.45, 0.34);
+
     return Container(
-      color: Colors.red.withOpacity(1),
+      color: Colors.red.withOpacity(0),
       width: widthBase,
       height: heightBase,
       child: Stack(
@@ -21,10 +22,17 @@ class InitialLogoView extends StatelessWidget {
             width: widthBase * 0.8,
             height: heightBase * 0.8,
             rotation: -9,
-            oneColorGradient: Colors.yellow,
-            twoColorGradient: Colors.green,
+            oneColorGradient: AppColorsRGBA.primary,
+            twoColorGradient: AppColorsRGBA.fifth,
           ),
           //! Logo
+          SizedBox(
+              width: widthBase * 0.65,
+              height: heightBase * 0.65,
+              child: GlobalLogo(
+                hexBaseColor: AppColorsHEX.fourth,
+                hexDecorationColor: AppColorsHEX.transparent,
+              ))
         ],
       ),
     );

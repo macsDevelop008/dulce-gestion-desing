@@ -7,7 +7,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: true,
       routerConfig: appRouter,
+      theme: AppTheme.themeDataLight,
     );
   }
 }

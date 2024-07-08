@@ -1,3 +1,4 @@
+import 'package:dulce_gestion/configuration/configuration.dart';
 import 'package:dulce_gestion/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 
@@ -11,19 +12,27 @@ class InitialScreen extends StatelessWidget {
     //final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: AppColorsRGBA.sixth,
       body: PopScope(
           canPop: false,
           onPopInvoked: (pop) {
             debugPrint('Sin Botón Atras');
           },
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+          child: Container(
+            color: Colors.red.withOpacity(0),
+            width: Responsive.widthSize(context, 1, 1),
+            height: Responsive.heightSize(context, 1, 1),
+            child: Stack(
+              alignment: Alignment.center,
               children: [
                 //! Logo
-                InitialLogoView(),
-                //! Puntos animados de carga
+                const InitialLogoView(),
+                //! Animación de carga
+                Positioned(
+                    top: Responsive.heightSize(context, .18, .255),
+                    child: const LoadingAnimationView()),
                 //! Version de la app
+                Positioned(bottom: 0, child: VersionAppTextView()),
               ],
             ),
           )),
