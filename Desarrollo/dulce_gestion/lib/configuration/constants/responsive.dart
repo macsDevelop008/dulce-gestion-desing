@@ -4,6 +4,10 @@ class Responsive {
   //h = 667, 867
   //w = 375 , 411
 
+  static double fontSize(BuildContext context, double fontSize) {
+    return MediaQuery.textScalerOf(context).scale(fontSize);
+  }
+
   static double heightSize(
       BuildContext context, double sizeSmall, double sizeBig) {
     // Tamaño del contexto(pantalla) actual
