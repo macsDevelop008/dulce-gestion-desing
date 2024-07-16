@@ -25,6 +25,8 @@ class InitialScreen extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
+                //! Decorations
+                const DecorationsBackgroundView(),
                 //! Logo
                 const InitialLogoView(),
                 //! Animación de carga
@@ -32,7 +34,7 @@ class InitialScreen extends StatelessWidget {
                     top: Responsive.heightSize(context, .18, .255),
                     child: const LoadingAnimationView()),
                 //! Version de la app
-                Positioned(bottom: 0, child: VersionAppTextView()),
+                const Positioned(bottom: 0, child: VersionAppTextView()),
               ],
             ),
           )),
