@@ -9,8 +9,6 @@ class InitialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final size = MediaQuery.of(context).size;
-
     return Scaffold(
       backgroundColor: AppColorsRGBA.sixth,
       body: PopScope(
@@ -25,7 +23,7 @@ class InitialScreen extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
-                //! Decorations
+                //! Decoraciones cubos fondo
                 const DecorationsBackgroundView(),
                 //! Logo
                 const InitialLogoView(),

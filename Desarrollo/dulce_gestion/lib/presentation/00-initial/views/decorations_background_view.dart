@@ -19,7 +19,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           // Cuadrado arriba-derecha
           Positioned(
             top: 0,
-            right: Responsive.widthSize(context, -0.03, -0.03),
+            right: Responsive.widthSize(context, -0.05, -0.03),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.25, 0.25),
               height: Responsive.widthSize(context, 0.25, 0.25),
@@ -42,7 +42,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           ),
           // logo-pequeño - superior derecha
           Positioned(
-            top: Responsive.widthSize(context, 0.6, 0.6),
+            top: Responsive.widthSize(context, 0.4, 0.6),
             right: Responsive.widthSize(context, 0.2, 0.2),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.11, 0.11),
@@ -55,7 +55,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           ),
           // logo-pequeño - superior(arriba del grande) izquierda
           Positioned(
-            top: Responsive.widthSize(context, 0.6, 0.6),
+            top: Responsive.widthSize(context, 0.4, 0.6),
             left: Responsive.widthSize(context, 0.1, 0.1),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.055, 0.055),
@@ -68,7 +68,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           ),
           // logo-pequeño - inferior izquierda
           Positioned(
-            top: Responsive.widthSize(context, 1.36, 1.36),
+            top: Responsive.widthSize(context, 1.26, 1.36),
             left: Responsive.widthSize(context, 0.18, 0.18),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.09, 0.09),
@@ -81,7 +81,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           ),
           // logo-grande inferior derecho
           Positioned(
-            top: Responsive.widthSize(context, 1.2, 1.2),
+            top: Responsive.widthSize(context, 1.06, 1.2),
             right: Responsive.widthSize(context, 0.12, 0.12),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.26, 0.26),
@@ -94,7 +94,7 @@ class DecorationsBackgroundView extends StatelessWidget {
           ),
           // logo-grande superior izquierdo
           Positioned(
-            top: Responsive.widthSize(context, 0.7, 0.7),
+            top: Responsive.widthSize(context, 0.5, 0.7),
             left: Responsive.widthSize(context, 0.15, 0.15),
             child: GlobalBackgroundRoundedSquareGradient(
               width: Responsive.widthSize(context, 0.23, 0.23),
