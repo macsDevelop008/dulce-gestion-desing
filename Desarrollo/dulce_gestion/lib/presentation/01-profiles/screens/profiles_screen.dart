@@ -1,5 +1,4 @@
 import 'package:dulce_gestion/configuration/configuration.dart';
-import 'package:dulce_gestion/configuration/constants/responsive.dart';
 import 'package:flutter/material.dart';
 
 class ProfilesScreen extends StatelessWidget {
@@ -15,7 +14,7 @@ class ProfilesScreen extends StatelessWidget {
   }
 
   Widget _modal(BuildContext context) {
-    final double heightBase = Responsive.heightSize(context, 0.51, 0.44);
+    final double heightBase = Responsive.heightSize(context, 0.58, 0.51);
     final double widthBase = Responsive.widthSize(context, 0.9, 0.9);
     Responsive.widthSize(context, 0.9, 0.9);
     return Container(
@@ -36,12 +35,16 @@ class ProfilesScreen extends StatelessWidget {
                   color: AppColorsRGBA.fourth,
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black, blurRadius: 5, spreadRadius: 0.5)
+                        color: AppColorsRGBA.sixth.withOpacity(0.2),
+                        blurRadius: 5,
+                        spreadRadius: 0.5)
                   ],
                   borderRadius:
                       BorderRadius.all(Radius.circular(widthBase * 0.1))),
             ),
           ),
+          // ! Icono superior
+          Image.asset('assets/animations/gif/gif-warnig.gif')
         ],
       ),
     );
