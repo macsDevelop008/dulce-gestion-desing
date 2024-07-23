@@ -135,6 +135,8 @@ class ProfilesScreen extends StatelessWidget {
               ),
             ),
           ),
+          // ! Icono superior
+          Image.asset('assets/animations/gif/gif-warnig.gif')
         ],
       ),
     );

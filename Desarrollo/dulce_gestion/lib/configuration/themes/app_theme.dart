@@ -16,7 +16,7 @@ class AppColorsRGBA {
 
   static Color bad = const Color.fromRGBO(222, 82, 76, 1);
   static Color good = const Color.fromRGBO(36, 168, 175, 1);
-  static Color warning = const Color.fromRGBO(231, 181, 73, 1);
+  static Color warning = const Color.fromRGBO(255, 199, 56, 1);
 }
 
 //! Colores de la app en HEX
@@ -32,5 +32,5 @@ class AppColorsHEX {
 
   static String bad = '#DE524C';
   static String good = '#24A8AF';
-  static String warning = '#E7B549';
+  static String warning = '#ffc738';
 }
