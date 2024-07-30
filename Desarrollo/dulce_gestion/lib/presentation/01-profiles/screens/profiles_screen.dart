@@ -1,8 +1,6 @@
 import 'package:dulce_gestion/configuration/configuration.dart';
-import 'package:dulce_gestion/configuration/constants/responsive.dart';
 import 'package:dulce_gestion/presentation/presentation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class ProfilesScreen extends StatelessWidget {
   static const String name = 'profiles-screen';
@@ -30,7 +28,7 @@ class ProfilesScreen extends StatelessWidget {
         children: [
           //! Base fondo
           Positioned(
-            top: heightBase * 0.23,
+            top: heightBase * 0.165,
             //! Base blanco
             child: Container(
                 height: heightBase * 0.73,
@@ -39,9 +37,9 @@ class ProfilesScreen extends StatelessWidget {
                     color: AppColorsRGBA.fourth,
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.black.withOpacity(.3),
-                          blurRadius: 30,
-                          spreadRadius: 0.7)
+                          color: Colors.black.withOpacity(.1),
+                          blurRadius: 20,
+                          spreadRadius: 0.4)
                     ],
                     borderRadius:
                         BorderRadius.all(Radius.circular(widthBase * 0.1))),
@@ -52,9 +50,9 @@ class ProfilesScreen extends StatelessWidget {
                     //! Titulo
                     Container(
                       alignment: Alignment.center,
-                      color: Colors.red.withOpacity(.0),
+                      color: Colors.pink.withOpacity(1.0),
                       width: widthBase * 0.8,
-                      height: heightBase * 0.17,
+                      height: heightBase * 0.12,
                       child: Text(
                         'Algo Salio Mal...',
                         overflow: TextOverflow.ellipsis,
@@ -69,7 +67,7 @@ class ProfilesScreen extends StatelessWidget {
                     //! Información
                     Container(
                       alignment: Alignment.center,
-                      color: Colors.green.withOpacity(.0),
+                      color: Colors.green.withOpacity(1.0),
                       width: widthBase * 0.8,
                       height: heightBase * 0.26,
                       child: Text(
@@ -90,23 +88,25 @@ class ProfilesScreen extends StatelessWidget {
                       width: widthBase * 0.8,
                       height: heightBase * 0.15,
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            width: widthBase * 0.5,
+                          // Botón aceptar
+                          GlobalButtonTextWidget(
+                            width: widthBase * 0.4,
                             height: heightBase * 0.11,
-                            decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius:
-                                    BorderRadius.circular(widthBase * 0.1)),
-                            child: Text('Aceptar',
-                                style: TextStyle(
-                                  fontFamily: 'Baloo2',
-                                  color: AppColorsRGBA.fourth,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: Responsive.fontSize(context, 10),
-                                )),
+                            onPressed: () {},
+                            text: 'Aceptar',
+                            textSize: heightBase * 0.06,
+                            backgroundColor: AppColorsRGBA.good,
+                            textColor: AppColorsRGBA.sixth,
+                          ),
+                          // Botón cancelar
+                          GlobalButtonIconWidget(
+                            size: heightBase * 0.05,
+                            iconSize: heightBase * 0.08,
+                            backgroundColor: AppColorsRGBA.good,
+                            iconColor: AppColorsRGBA.good,
+                            icon: Icons.close,
                           )
                         ],
                       ),
@@ -115,7 +115,7 @@ class ProfilesScreen extends StatelessWidget {
                 )),
           ),
 
-          //! Icono animado
+          //! Icono superior
           Positioned(
             top: heightBase * 0.03,
             child: Container(
@@ -135,8 +135,6 @@ class ProfilesScreen extends StatelessWidget {
               ),
             ),
           ),
-          // ! Icono superior
-          Image.asset('assets/animations/gif/gif-warnig.gif')
         ],
       ),
     );

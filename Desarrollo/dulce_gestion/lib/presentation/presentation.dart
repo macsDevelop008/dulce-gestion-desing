@@ -1,6 +1,7 @@
 //! global
 // Widget
-
+export 'package:dulce_gestion/presentation/global/widgets/global_button_icon_widget.dart';
+export 'package:dulce_gestion/presentation/global/widgets/global_button_text_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_loading_animation_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_logo_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_background_rounded_square_gradient_widget.dart';

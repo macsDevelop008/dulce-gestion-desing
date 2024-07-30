@@ -40,7 +40,6 @@ flutter:
     - .env
     - assets/logos/
     - assets/loading/
-    - assets/animations/gif/
 
 
 
