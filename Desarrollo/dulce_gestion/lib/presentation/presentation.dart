@@ -1,5 +1,10 @@
 //! global
+// View
+
+export 'package:dulce_gestion/presentation/global/modal/views/global_modal_view.dart';
+
 // Widget
+
 export 'package:dulce_gestion/presentation/global/widgets/global_button_icon_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_button_text_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_loading_animation_widget.dart';
@@ -7,6 +12,10 @@ export 'package:dulce_gestion/presentation/global/widgets/global_logo_widget.dar
 export 'package:dulce_gestion/presentation/global/widgets/global_background_rounded_square_gradient_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_background_circle_gradient_widget.dart';
 export 'package:dulce_gestion/presentation/global/widgets/global_curve_background_decoration_widget.dart';
+export 'package:dulce_gestion/presentation/global/modal/widgets/global_modal_icon_widget.dart';
+export 'package:dulce_gestion/presentation/global/modal/widgets/global_modal_title_widget.dart';
+export 'package:dulce_gestion/presentation/global/modal/widgets/global_modal_text_widget.dart';
+export 'package:dulce_gestion/presentation/global/modal/widgets/global_modal_actions_widget.dart';
 
 //! 00-Initial
 // Screens

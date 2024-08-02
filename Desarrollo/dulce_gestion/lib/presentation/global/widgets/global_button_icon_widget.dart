@@ -1,4 +1,3 @@
-import 'package:dulce_gestion/configuration/configuration.dart';
 import 'package:flutter/material.dart';
 
 class GlobalButtonIconWidget extends StatelessWidget {
@@ -15,22 +14,39 @@ class GlobalButtonIconWidget extends StatelessWidget {
       required this.backgroundColor,
       required this.iconColor,
       required this.icon,
-      this.onPressed,
+      required this.onPressed,
       required this.iconSize});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: hacer con el Material button
     return Container(
       alignment: Alignment.center,
+      width: size,
+      height: size,
       decoration: BoxDecoration(color: backgroundColor, shape: BoxShape.circle),
-      child: IconButton(
+      child: Stack(
         alignment: Alignment.center,
-        splashColor: AppColorsRGBA.primary.withOpacity(0.3),
-        color: iconColor,
-        iconSize: iconSize,
-        icon: Icon(icon),
-        onPressed: () {},
+        children: [
+          // Icono
+          Icon(
+            icon,
+            color: iconColor,
+            size: iconSize,
+          ),
+          // Evento
+          SizedBox(
+            height: size,
+            width: size,
+            child: MaterialButton(
+              onPressed: onPressed != null
+                  ? () {
+                      onPressed!();
+                    }
+                  : null,
+              shape: const CircleBorder(),
+            ),
+          )
+        ],
       ),
     );
   }
